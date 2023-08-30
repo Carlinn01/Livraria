@@ -4,18 +4,19 @@
     box-sizing: border-box; /* Faz com que o padding e a borda não aumentem o tamanho do elemento */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body {
-    font-family: 'Ubuntu', sans-serif; /* Define a fonte padrão */
-    background-color: #f0f0f0; /* Define a cor de fundo */
+    font-family: 'Playfair Display' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/* Define a fonte padrão */
+    background-color: #40E0D0; /* Define a cor de fundo */
 }
 
 header {
-    background-color: #ff0000; /* Define a cor de fundo */
+    background-color: mediumblue; /* Define a cor de fundo */
     color: #fff; /* Define a cor do texto */
     text-align: center; /* Centraliza o texto */
-    padding: 1.5rem; /* Define um espaçamento interno */
+    padding: 10px; /* Define um espaçamento interno */
+
 }
 
 nav ul {
@@ -24,14 +25,14 @@ nav ul {
 
 nav li {
     display: inline; /* Faz com que os itens da lista fiquem na mesma linha */
-    margin-right: 20px; /* Define um espaçamento entre os itens */
+    margin-right: 90px; /* Define um espaçamento entre os itens */
 }
 
 nav a {
     text-decoration: none; /* Remove o sublinhado dos links */
     color: #fff; /* Define a cor do texto */
     font-weight: bold; /* Define o peso da fonte */
-    transition: 0.3s;
+    transition: 1.3s;
 }
 
 nav a:hover {
@@ -44,12 +45,25 @@ main {
 
 .card {
     width: calc(33.33% - 20px); /* 33.33% - 40px */
+    height: 450px;
     margin: 10px; /* Define um espaçamento externo */
     padding: 20px; /* Define um espaçamento interno */
-    background-color: #fff; /* Define a cor de fundo */
+    background-color: #00BFFF; /* Define a cor de fundo */
     box-shadow: 0 2px 4px rgba(241, 112, 112, 0.1); /* Adiciona uma sombra */
     text-align: center; /* Centraliza o texto */
     float: left; /* Faz com que os elementos fiquem na mesma linha */
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 50% - 40px */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
 }
 
 .card img {
@@ -58,7 +72,7 @@ main {
 }
 
 .card button {
-    background-color: #ff0000;
+    background-color: #4682B4;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -68,11 +82,11 @@ main {
 }
 
 .card button:hover {
-    background-color: #000000; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #7FFFD4; /* Muda a cor de fundo ao passar o mouse */
 }
 
 footer {
-    background-color: #ff0000;
+    background-color: mediumblue;
     color: #fff;
     text-align: center;
     padding: 1rem;
