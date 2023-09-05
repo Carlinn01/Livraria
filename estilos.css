@@ -1,62 +1,88 @@
 * {
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o padding padrão */
-    box-sizing: border-box; /* Faz com que o padding e a borda não aumentem o tamanho do elemento */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding: 0;
+    /* Remove o padding padrão */
+    box-sizing: border-box;
+    /* Faz com que o padding e a borda não aumentem o tamanho do elemento */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body {
-    font-family: 'Playfair Display' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;/* Define a fonte padrão */
-    background-color: #40E0D0; /* Define a cor de fundo */
+    font-family: 'Playfair Display' 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Define a fonte padrão */
+    background-color: #40E0D0;
+    /* Define a cor de fundo */
 }
 
 header {
-    background-color: mediumblue; /* Define a cor de fundo */
-    color: #fff; /* Define a cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 10px; /* Define um espaçamento interno */
+    background-color: mediumblue;
+    /* Define a cor de fundo */
+    color: #fff;
+    /* Define a cor do texto */
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 10px;
+    /* Define um espaçamento interno */
 
 }
 
 nav ul {
-    list-style: none; /* Remove a bolinha da lista */
+    list-style: none;
+    /* Remove a bolinha da lista */
 }
 
 nav li {
-    display: inline; /* Faz com que os itens da lista fiquem na mesma linha */
-    margin-right: 90px; /* Define um espaçamento entre os itens */
+    display: inline;
+    /* Faz com que os itens da lista fiquem na mesma linha */
+    margin-right: 90px;
+    /* Define um espaçamento entre os itens */
 }
 
 nav a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #fff; /* Define a cor do texto */
-    font-weight: bold; /* Define o peso da fonte */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: #fff;
+    /* Define a cor do texto */
+    font-weight: bold;
+    /* Define o peso da fonte */
     transition: 1.3s;
 }
 
 nav a:hover {
     background-color: deepskyblue;
 }
+
 main {
-    padding: 50px; /* Define um espaçamento interno */
-    overflow: hidden; /* Faz com que o elemento não ultrapasse o tamanho do pai */
+    padding: 50px;
+    /* Define um espaçamento interno */
+    overflow: hidden;
+    /* Faz com que o elemento não ultrapasse o tamanho do pai */
 }
 
 .card {
-    width: calc(33.33% - 20px); /* 33.33% - 40px */
+    width: calc(33.33% - 20px);
+    /* 33.33% - 40px */
     height: 450px;
-    margin: 10px; /* Define um espaçamento externo */
-    padding: 20px; /* Define um espaçamento interno */
-    background-color: #00BFFF; /* Define a cor de fundo */
-    box-shadow: 0 2px 4px rgba(241, 112, 112, 0.1); /* Adiciona uma sombra */
-    text-align: center; /* Centraliza o texto */
-    float: left; /* Faz com que os elementos fiquem na mesma linha */
+    margin: 10px;
+    /* Define um espaçamento externo */
+    padding: 20px;
+    /* Define um espaçamento interno */
+    background-color: #00BFFF;
+    /* Define a cor de fundo */
+    box-shadow: 0 2px 4px rgba(241, 112, 112, 0.1);
+    /* Adiciona uma sombra */
+    text-align: center;
+    /* Centraliza o texto */
+    float: left;
+    /* Faz com que os elementos fiquem na mesma linha */
 }
 
 @media screen and (max-width: 768px) {
     .card {
-        width: calc(50% - 20px); /* 50% - 40px */
+        width: calc(50% - 20px);
+        /* 50% - 40px */
     }
 }
 
@@ -67,8 +93,10 @@ main {
 }
 
 .card img {
-    max-width: 100%; /* Define a largura máxima da imagem */
-    height: 300px; /* Define a altura da imagem */
+    max-width: 100%;
+    /* Define a largura máxima da imagem */
+    height: 300px;
+    /* Define a altura da imagem */
 }
 
 .card button {
@@ -77,12 +105,15 @@ main {
     border: none;
     padding: 10px 20px;
     margin-top: 10px;
-    cursor: pointer; /* Muda o cursor do mouse */
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+    cursor: pointer;
+    /* Muda o cursor do mouse */
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave */
 }
 
 .card button:hover {
-    background-color: #7FFFD4; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #7FFFD4;
+    /* Muda a cor de fundo ao passar o mouse */
 }
 
 footer {
@@ -103,20 +134,20 @@ footer {
 }
 
 form {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 form fieldset {
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 10px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 form legend {
-  font-weight: bold;
-  color: #777;
+    font-weight: bold;
+    color: #777;
 }
 
 /* Campos de Entrada de Texto */
@@ -134,11 +165,11 @@ form legend {
 input[type="text"],
 input[type="date"],
 input[type="number"] {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  color: #555;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
 }
 
 /* Componentes Checkbox e Radio */
@@ -146,51 +177,54 @@ input[type="number"] {
     display: inline;
     margin-right: 10px;
     font-weight: normal;
-  }
-  
-  .input-check {
-      display: inline-block;
-      margin-right: 10px;
-  }
-  
-  .input-check input[type="checkbox"] + label {
-      display: inline-block;
-      font-weight: normal;
-  }
+}
 
-  /* Componentes Textarea e Select */
+.input-check {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.input-check input[type="checkbox"]+label {
+    display: inline-block;
+    font-weight: normal;
+}
+
+/* Componentes Textarea e Select */
 textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    resize: vertical; /* Permite redimensionar verticalmente o textarea */
-    height: 120px; /* Altura inicial do textarea */
-  }
-  
-  select {
+    resize: vertical;
+    /* Permite redimensionar verticalmente o textarea */
+    height: 120px;
+    /* Altura inicial do textarea */
+}
+
+select {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
+}
 
-  /* Botões */
+/* Botões */
 button {
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
     padding: 10px;
-    cursor: pointer; /* Adiciona um cursor de ponteiro */
-  }
-  
-  /* Botão de Limpar */
-  button[type="reset"] {
+    cursor: pointer;
+    /* Adiciona um cursor de ponteiro */
+}
+
+/* Botão de Limpar */
+button[type="reset"] {
     background-color: #6c757d;
-  }
-  
-  /* Botão de Enviar */
-  button:hover {
+}
+
+/* Botão de Enviar */
+button:hover {
     background-color: #0056b3;
-  }
+}
